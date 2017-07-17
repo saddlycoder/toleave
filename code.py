@@ -1,4 +1,4 @@
-# @author: vk.com/cm_3ky 
+# @author: vk.com/id402825767
 
 import vk_api 
 
