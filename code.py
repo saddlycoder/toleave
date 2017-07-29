@@ -2,9 +2,12 @@
 
 import vk_api 
 
-whitelist = [, 137691354, 71927597] # сообщества, которые игнорируются. пример : 123456789
+whitelist = [13376988, 7192147597] # сообщества, которые игнорируются. пример : 123456789
 
-vk_session = vk_api.VkApi(token='TOKEN') 
+try:
+    vk_session = vk_api.VkApi(token='TOKEN')
+except vk_api.VkAuthError as err:
+    print(err)
 
 vk = vk_session.get_api() 
 
